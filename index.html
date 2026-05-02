@@ -3,40 +3,67 @@
 <head>
 <title>Talk&Type Instructions</title>
 <style>
-/* 1. The Global Look */
+/* 1. GLOBAL SETTINGS */
 body {
-    background-color: #0b1120; /* The Dark Navy from your screenshot */
+    background-color: #0b1120;
     color: white;
-    font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* 2. The Navbar Fix (Flexbox) */
-nav {
-    width: 100%;
-    max-width: 5000px;
-    display: flex;
-    justify-content: flex-start; /* Keeps logo on the left */
-    padding-bottom: 10px;
+/* 2. THE NAVBAR FIX (Using font from image_c28a66.png) */
+.navbar {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 40px !important;
+    padding: 10px 50px !important;
+    width: 100% !important;
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    /* This makes the navbar font modern like the home page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* 3. The Instruction Cards */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-pills {
+    display: flex !important;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #38bdf8 !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 3. YOUR ORIGINAL CARD STYLES (Restored from image_cc7044.jpg) */
 .card {
-    background-color: #161b22; /* Slightly lighter navy for contrast */
-    border: 1px solid #00008B; /* The glowing cyan border */
+    background-color: #161b22; 
+    border: 1px solid #00008B; /* Your original dark blue border */
     border-radius: 20px;
     width: 90%;
-    max-width: 500px;
-    margin-bottom: 25px;
+    max-width: 550px;
+    margin-top: 25px;
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2); /* Soft cyan glow */
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
 }
 
-/* 4. Text Styling */
 .card-header {
     color: #38bdf8;
     font-weight: bold;
@@ -44,25 +71,37 @@ nav {
     margin-bottom: 10px;
     border-bottom: 1px solid #333;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .card-body {
     font-size: 1rem;
     line-height: 1.5;
-    color: #cbd5e1; /* Soft gray for better readability */
+    color: #cbd5e1;
+    text-align: center;
 }
+
+/* Restoring the original serif font for the instructions only */
+.card-header, .card-body, h1 {
+    font-family: 'Times New Roman', serif;
+}
+
 </style>
 </head>
 
 <body>
 
-<nav class="nav">
-<a href="https://talk-and-type.onrender.com" style="text-decoration: none;">
-        <h1 style="color:blue; padding:10px;">
-            Talk<span style="color:white;">&</span>Type
-        </h1>
-    </a>
-</nav>
+    <nav class="navbar">
+        <h1 class="logo">Talk<span style="color:white;">&</span>Type</h1>
+	<ul class="nav nav-pills">
+  	<li class="nav-item">
+    		<a class="nav-link" aria-current="page" href="https://talk-and-type.onrender.com/">Home</a>
+  	</li>
+  	<li class="nav-item">
+    		<a class="nav-link" href="https://eesasahi10.github.io/Talk-and-Type-Instructions/">Instructions</a>
+  	</li>
+	</ul>
+    </nav>
 
 <h1 style="text-align:center; color:blue; font-size:35;">How to use the Talk&Type App</h1>
 
